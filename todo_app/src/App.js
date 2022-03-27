@@ -8,6 +8,7 @@ function App() {
   return (
     <ReduxProvider store = {store}>
     <div className="App">
+     
       <Todo/>
     </div>
     </ReduxProvider>

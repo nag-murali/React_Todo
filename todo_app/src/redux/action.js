@@ -6,13 +6,15 @@ export const add_todo = ( data ) => {
    }
 };
 
-export const remove_todo = ( ) => ({
-    type: REMOVE_TODO
+export const remove_todo = (data) => ({
+    type: REMOVE_TODO,
+    payload: data
 })
 
-export const update_todo = (data) => {
+export const update_todo = (data, index) => {
     return {
         type: UPDATE_TODO,
-    payload: data
+    payload: data,
+     index : index
     }
 }
